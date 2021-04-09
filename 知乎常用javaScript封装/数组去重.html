@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+</body>
+<script>
+  //es6 
+  function uniqueArr(arr){
+      return [... new Set(arr)]
+  };
+  //filter方法实现
+  function uniqueArrAlternative(arr){
+      var obj ={};
+      return arr.filter(ele=>{
+          console.log(obj[ele]);
+          if(!obj[ele]){
+              obj[ele] = true;
+          }else{
+              obj[ele] = false;
+          }
+      })
+  }
+//  uniqueArrAlternative([1,2,5,0,0,2]);
+//each方法
+function uniqueArrEach(arr){
+    var result =[];
+    arr.forEach(function(v){
+        if(-1 == result.indexOf(v)){
+            result.push(v); 
+        }
+    })
+    return  result;
+}
+  console.log(uniqueArrEach([1,2,3,8,0,3,8,9]));
+</script>
+</html>
