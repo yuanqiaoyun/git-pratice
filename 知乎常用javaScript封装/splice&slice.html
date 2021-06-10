@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice和slice方法</title>
+    <style>
+        div{
+        width:80%;
+        height:400px;
+        border:1px solid #f00;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <p>splice是数组的拼接，删除，添加都是拼接。删除或者添加取决于第二个参数</p>
+       <p>第一个参数是毫无疑问的就是拼接元素开始的位置</p>
+       <p>第二个参数就是要删除多少个元素</p>
+       <p>当第二个参数是0时，那就是不删除。</p>
+    </div>
+    <ul>
+        <li>
+            <p>splice原有的意思是拼接</p>
+            <p>呃呃呃，splice和slice 傻傻分不清楚了</p>
+            <button>参数为0的</button>
+            <p id='demo2'><span>第二个参数为0的情况：</span></p>
+        </li>
+    </ul>
+  <script>
+   var fruits = ["Banana", "Orange", "Apple", "Mango"];
+   var newFruits = fruits.splice(2, 2, "Lemon", "Kiwi");   
+  </script>
+</body>
+</html>
