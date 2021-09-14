@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字溢出</title>
+    <style>
+      .wrap{
+        width:200px;
+      }
+      .title{
+         overflow: hidden;
+         text-overflow: ellipsis;
+         display: -webkit-box;
+         -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical; 
+      }
+    </style>
+</head>
+<body>
+    <div>单纯的两行文字溢出</div>
+    <div class="wrap">
+        <div class="title">两行文本的军队和房价的看法和骄傲的环境酒店客房哈得尽快发哈将对方回答数据库发大家立刻发动</div>
+    </div>
+</body>
+</html>

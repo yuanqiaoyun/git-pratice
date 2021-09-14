@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+    }
+    .main{
+      width:800px;
+      height:800px;
+      border:1px solid #f87;
+      margin:0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="main" id = "main">
+
+  </div>
+</body>
+<script type="text/javaScript">
+  var lineNum = prompt("请输入列数");
+  var str = '';
+  for(var i=1;i<Number(lineNum);i++){
+    console.log(i);
+    for(var j=0;j<i;j++){
+      str += '* ';
+    }
+    str += '</br>';
+  }
+  var $dom = document.getElementById('main');
+  console.log($dom);
+  $dom.innerHTML = str;
+</script>
+</html>
